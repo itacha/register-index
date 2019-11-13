@@ -1,0 +1,578 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 12px;
+    font-family: Microsoft Yahei;
+    color: #333;
+}
+
+a {
+    color: #1b66c7;
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    outline: none;
+}
+
+#wrapper {
+    width: 100%;
+}
+
+#head {
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+    height: 75px;
+    z-index: 100;
+}
+
+.left-head {
+    display: block;
+    width: 330px;
+    background: url('images/logo.png') right no-repeat;
+}
+
+.left-head a {
+    display: block;
+    width: 330px;
+    height: 76px;
+}
+
+#head img {
+    margin-top: 15px;
+}
+
+#nav {
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-2 {
+    height: 20px;
+    background: url(images/reg_hr.png) no-repeat center top;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    /* position: absolute; */
+    width: 980px;
+    display: block;
+    overflow: hidden;
+}
+
+.content-left {
+    width: 720px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+
+.label {
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    display: block;
+    height: 42px;
+    width: 65px;
+    line-height: 42px;
+    font-size: 14px;
+    color: #666;
+    font-weight: 700;
+    text-align: right;
+}
+
+.bdys {
+    float: left;
+    position: relative;
+    height: 16px;
+    width: 328px;
+    padding: 11px 10px;
+    font-size: 14px;
+    color: #666;
+    transition: 3s;
+}
+
+.yzm {
+    width: 156px;
+}
+
+.pass-btn-verifyCodeSend {
+    border-radius: 0;
+    border: 1px solid #ddd;
+    height: 40px;
+    background: #f7f7f7;
+    color: #666;
+    font-weight: 400;
+    width: 160px;
+    float: left;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.pass-btn-verifyCodeSend-disabled {
+    background: #f7f7f7;
+    color: #ddd;
+}
+
+.bd_3 {
+    margin-top: 30px;
+    position: relative;
+    clear: both;
+    zoom: 1;
+    display: block;
+}
+
+.bd_3::after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.bd_4 {
+    margin-top: 0;
+}
+
+.yc {
+    float: left;
+    padding: 10px 0 0 10px;
+    display: block;
+    width: 270px;
+    visibility: hidden;
+}
+
+.hidden_username {
+    color: #666;
+}
+
+.pass-item-error {
+    position: absolute;
+    left: 450px;
+    top: 12px;
+    width: 250px;
+    color: #fc4343;
+    line-height: 14px;
+    padding-left: 20px;
+    background: url('images/err_small.png') 0 0 no-repeat;
+}
+
+.hidden_phone {
+    color: #666;
+}
+
+#demo_img {
+    display: block;
+    float: left;
+    position: relative;
+    margin: 7px 0 0 5px;
+}
+
+.msg_pwd {
+    display: block;
+    float: left;
+    padding: 5px 10px;
+    visibility: hidden;
+    width: 200px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 1px #efefefe;
+    line-height: 20px;
+    color: #666;
+}
+
+.pwd-checklist-item {
+    background: url('images/reg_icons.png') no-repeat -86px -112px;
+    padding-left: 18px;
+}
+
+.pwd-checklist-item-error {
+    background-position: -86px -144px;
+    color: #fc4343;
+}
+
+.img_yzm {
+    display: block;
+    float: left;
+    position: relative;
+    margin: 5px 0 0 10px;
+}
+
+.yhxy {
+    display: block;
+    position: relative;
+    float: left;
+    margin: 20px 10px 20px 80px;
+}
+
+.regsiter {
+    display: block;
+    position: relative;
+    float: left;
+    margin: 20px 0 0 80px;
+    width: 350px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+    background-color: #3f89ec;
+    border: 0;
+    background-image: none;
+    -wekit_border_radius: 3px;
+    transition: 3s;
+    -wekit-transition: 3s;
+}
+
+.pass-xy {
+    position: relative;
+    top: 23px;
+    width: 250px;
+    color: #fc4343;
+    line-height: 14px;
+    background: url('images/err_small.png') 0 0 no-repeat;
+}
+
+.content-right {
+    width: 258px;
+    display: block;
+    float: right;
+    border: 1px solid #d1eeff;
+    background-color: #f5fbff;
+    margin-top: 40px;
+}
+
+.con-r-title {
+    margin: 0 10px;
+    padding-left: 30px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #e6edf2;
+    font-size: 14px;
+    color: #666;
+    background: url('images/phone.png') left center no-repeat;
+}
+
+.con-r-p-text {
+    color: #666;
+    font-size: 12px;
+    margin: 20px 10px 5px 10px;
+}
+
+.con-r-p-warn {
+    font-size: 14px;
+    color: #f18300;
+    font-weight: 700;
+    margin: 0 10px;
+}
+
+.con-r-p-last {
+    color: #666;
+    font-size: 12px;
+    margin: 5px 10px 0 10px;
+}
+
+.con-r-p-last a {
+    text-decoration: underline;
+    color: #00c;
+}
+
+.con-r-code {
+    text-align: center;
+    padding: 20px 0 10px;
+}
+
+.con-r-code img {
+    width: 168px;
+    height: 168px;
+}
+
+.login-link {
+    position: absolute;
+    display: block;
+    top: 26px;
+    right: 180px;
+    color: #666;
+}
+
+.login-btn {
+    font-weight: 700;
+    height: 32px;
+    width: 64px;
+    border: 0;
+    background: url('images/reg_icons.png') no-repeat 0 -48px;
+    cursor: pointer;
+}
+
+.login-pop {
+    overflow: hidden;
+}
+
+.tan-background {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 500;
+}
+
+.tan-foreground {
+    display: none;
+    background-color: #FFFFFF;
+    position: absolute;
+    width: 393px;
+    height: 448px;
+    line-height: 30px;
+    left: 35%;
+    top: 20%;
+    color: #fff;
+    z-index: 501;
+    position: absolute;
+    text-align: center;
+}
+
+.tan-title {
+    cursor: move;
+    position: relative;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-bottom: 0;
+}
+
+.tan-title span {
+    width: auto;
+    height: 18px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #666;
+    background: url('images/baidu_logo_24.png') 18px 18px no-repeat;
+    text-indent: 50px;
+    padding: 15px 0 22px;
+    margin-right: 29px;
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    box-sizing: content-box;
+    text-overflow: ellipsis;
+}
+
+.button {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+}
+
+.close-btn {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url('images/err_small.png') no-repeat;
+}
+
+.tan-pass-login {
+    padding: 0 20px;
+}
+
+.pass-smaWrapper {
+    text-align: right;
+    margin: 0 0 10px;
+}
+
+.pass-sms-btn {
+    background: url('images/smsSwitchPhone.png') no-repeat;
+    padding-left: 15px;
+    color: #666;
+    cursor: pointer;
+}
+
+
+/* .pass-form{
+	padding-bottom: 18px;
+} */
+
+.pass-form-item {
+    position: relative;
+    z-index: 19;
+    padding-bottom: 15px;
+}
+
+.pass-label {
+    background: url('images/input_icons_24.png') 0 -66px no-repeat;
+    display: block;
+    position: absolute;
+    height: 24px;
+    overflow: hidden;
+    padding: 0 0 0 24px;
+    left: 16px;
+    top: 5px;
+    z-index: 20;
+}
+
+.pass-label-password {
+    background: url('images/input_icons_24.png') 0 -147px no-repeat;
+}
+
+.pass-label-yzm {
+    background: url('images/input_icons_24.png') 0 3px no-repeat;
+}
+
+.pass-input-text {
+    width: 260px;
+    padding-right: 50px;
+    height: 16px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #666;
+    padding: 12px 36px;
+}
+
+.input-verifycode {
+    width: 130px;
+    float: left;
+    margin-left: 10px;
+}
+
+.verifycode-img {
+    width: 85px;
+    height: 40px;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+    display: block;
+    float: left;
+}
+
+.tan-pass-login a {
+    font-size: 12px;
+    color: rgb(27, 102, 199);
+}
+
+#memberPass {
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.memberpass-label {
+    float: left;
+    margin-top: 10px;
+    color: #666;
+}
+
+.pass-submit {
+    background: #3f89ec;
+    cursor: pointer;
+    border: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    height: 48px;
+    display: block;
+    width: 340px;
+    margin-left: 10px;
+}
+
+.pass-reglink {
+    float: right;
+}
+
+.tan-pass-foot {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+}
+
+.foot-title {
+    text-align: left;
+    color: #666;
+    font-size: 12px;
+    line-height: 0;
+}
+
+.acc-ist {
+    float: left;
+    display: block;
+}
+
+.acc-list li {
+    width: 40px;
+    float: left;
+}
+
+.acc-list li a {
+    margin-top: 15px;
+    background-image: url('images/pass_login_icons.png');
+    display: block;
+    background-repeat: no-repeat;
+    width: 0;
+    height: 24px;
+    overflow: hidden;
+    padding-left: 24px;
+}
+
+.acc-qq a {
+    background-position: -88px 0;
+}
+
+.acc-sina a {
+    background-position: -64px 0;
+}
+
+.acc-weixin a {
+    background-position: -143px -100px;
+}
+
+.pass-form-item .pass-clearbtn {
+    display: none;
+    position: absolute;
+    top: 14px;
+    right: 12px;
+    height: 16px;
+    width: 16px;
+    background: url(https://passport.baidu.com/passApi/img/pass_login_icons.png) no-repeat -88px -48px;
+    cursor: pointer;
+}
+
+.pass-form-item .pass-clearbtn:hover {
+    background-position: -103px -48px;
+}
+
+.bd_3 .pass-clearbtn {
+    display: none;
+    position: absolute;
+    top: 14px;
+    left: 398px;
+    height: 16px;
+    width: 16px;
+    background: url(images/reg_icons.png) no-repeat -32px -24px;
+    cursor: pointer;
+}
+
+.bd_3 .pass-clearbtn:hover {
+    background-position: -48px -24px;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zn-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>注册百度</title>
+    <link rel="stylesheet" href="ys.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript">
+        function hidenshowpwd() {
+            var demoimg = document.getElementById("demo_img");
+            var demoinput = document.getElementById("demo_input");
+            if (demoinput.type == "password") {
+                demoinput.type = "text";
+                demoimg.src = "images/visible.png";
+            } else {
+                demoinput.type = "password";
+                demoimg.src = "images/invisible.png";
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="head">
+            <div class="left-head">
+                <a href="http://baidu.com">
+                    <img src="images/logo_baidu.jpg">
+                </a>
+            </div>
+        </div>
+        <div id="nav">
+            <div class="nav-2">
+                <div class="mod-nav clearfix">
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="content-left">
+                <form method="post" id="commentForm">
+                    <div class="bd_3">
+                        <label for="jd_username" class="label">用户名</label>
+                        <input id="jd_username" type="text" name="username" class="bdys pass_username" autocomplete="off" value placeholder="请设置用户名">
+                        <span class="pass-clearbtn"></span>
+                        <span class="yc hidden_username">
+							<span>设置后不可更改<br>中英文均可，最长十四个英文或7个汉字</span>
+                        </span>
+                        <span class="pass-item-right"></span>
+                        <span class="pass-item-error pass-error-user" style="display: none;"></span>
+                    </div>
+
+                    <div class="bd_3">
+                        <label for="jd_phone" class="label">手机号</label>
+                        <input id="jd_phone" type="text" name="username" class="bdys pass_phone" autocomplete="off" value placeholder="可用于登录和找回密码">
+                        <span class="pass-clearbtn"></span>
+                        <span class="yc hidden_phone">
+							<span class="ts_username">请输入中国大陆手机号，其他用户不可见</span>
+                        </span>
+                        <span class="pass-item-error pass-error-phone" style="display: none;"></span>
+                    </div>
+
+                    <div class="bd_3">
+                        <label for="demo_input" class="label">密码</label>
+                        <input type="password" name="pwd" class="bdys pass_password" id="demo_input" autocomplete="off" value placeholder="请设置登录密码">
+                        <span class="pass-clearbtn"></span>
+                        <img width="20px" height="15px" id="demo_img" onclick="hidenshowpwd()" src="images/invisible.png" />
+                        <span class="msg_pwd hidden_password">
+							<ul class="pwd-checklist">
+								<li class="pwd-checklist-item  pwd-checklist-len">长度为8~14个字符</li>
+								<li class="pwd-checklist-item pwd-checklist-cha">支持数字、大写字母和标点符号</li>
+								<li class="pwd-checklist-item pwd-checklist-spa">不允许有空格</li>
+							</ul>
+						</span>
+                        <span class="pass-item-error pass-error-pwd" style="display: none;"></span>
+                    </div>
+
+                    <div class="bd_3 bd_4">
+                        <label for="jd_repwd" class="label">确认密码</label>
+                        <input id="jd_repwd" type="password" name="repwd" class="bdys" autocomplete="off" value placeholder="再次输入密码">
+                        <span class="pass-clearbtn"></span>
+                        <span class="pass-item-error pass-error-repwd" style="display: none;">请您再次输入密码</span>
+                    </div>
+
+                    <div class="bd_3">
+                        <label for="jd_yzm" class="label">验证码</label>
+                        <input id="jd_yzm" type="text" name="yanzhengma" class="bdys yzm" autocomplete="off" value placeholder="请输入验证码">
+                        <span class="pass-clearbtn"></span>
+                        <input type="button" value="获取短信验证码" class="pass-btn-verifyCodeSend">
+                        <span class="pass-item-error pass-error-yzm" style="display: none;">请您输入验证码</span>
+                    </div>
+
+                    <div class="yhxy">
+                        <input type="checkbox" name="select" id="agree">
+                        <label for="agree">阅读并接受</label><a href="#">《百度用户协议》</a>及<a href="#">《百度隐私权保护声明》</a>
+                    </div>
+                    <span class="pass-xy" style="display: none;">&nbsp&nbsp&nbsp&nbsp&nbsp请勾选阅读并接受“百度用户协议”</span>
+
+                    <input type="submit" value="注册" name="regsiter" class="regsiter">
+                </form>
+            </div>
+
+            <div class="content-right">
+                <h3 class="con-r-title">手机快速注册</h3>
+                <div class="con-r-con">
+                    <p class="con-r-p-text">请使用中国大陆手机号，编辑短信：</p>
+                    <p class="con-r-p-warn">8-14位字符（支持数字/字母/符号）</p>
+                    <p class="con-r-p-text">作为登录密码，发送至：</p>
+                    <p class="con-r-p-warn">1069 0691 036590</p>
+                    <p class="con-r-p-text">即可注册成功，手机号即为登录账号。</p>
+                    <p class="con-r-p-last">快速注册即视为您同意
+                        <a href="">百度用户协议</a>和
+                        <a href="">百度隐私权保护声明</a>
+                    </p>
+                    <p class="con-r-code">
+                        <img src="images/upreg.png" /><br>
+                        <span>请使用手机百度进行扫码</span>
+                    </p>
+                </div>
+            </div>
+            <div class="login-link">
+                <span>我已注册，现在就</span>
+                <button class="login-btn">登录</button>
+            </div>
+        </div>
+        <!-- 登录弹出框 -->
+        <div class="login-pop">
+            <div class="tan-background"></div>
+            <div class="tan-foreground" id="moveid">
+                <div class="tan-title">
+                    <div class="button">
+                        <a href="#" class="close-btn"></a>
+                    </div>
+                    <span>登录百度账号</span>
+                </div>
+                <div class="tan-pass-login">
+                    <form method="post" autocomplete="off" class="pass-form">
+                        <p class="pass-smaWrapper">
+                            <a class="pass-sms-btn">短信快捷登录</a>
+                        </p>
+                        <p class="pass-form-item">
+                            <label class="pass-label"></label>
+                            <input type="text" name="username" class="pass-input-text" value placeholder="手机/邮箱/用户名">
+                            <span class="pass-clearbtn"></span>
+                        </p>
+                        <p class="pass-form-item">
+                            <label class="pass-label pass-label-password"></label>
+                            <input type="text" name="password" class="pass-input-text" value placeholder="密码">
+                            <span class="pass-clearbtn"></span>
+                        </p>
+                        <p class="pass-form-item">
+                            <label class="pass-label pass-label-yzm"></label>
+                            <input type="text" name="verifycode" placeholder="验证码" class="pass-input-text input-verifycode">
+                            <img src="images/yz.jpg" class="verifycode-img">
+                            <a href="#">换一张</a>
+                        </p>
+                        <p class="pass-form-item">
+                            <input type="checkbox" id="memberPass" name="memberpass" checked="checked">
+                            <label for="memberPass" class="memberpass-label">下次自动登录</label>
+                        </p>
+                        <p class="pass-form-item">
+                            <input type="submit" value="登录" class="pass-submit">
+                            <a href="#" class="pass-reglink">立即注册</a>
+                        </p>
+                    </form>
+                </div>
+                <div class="tan-pass-foot">
+                    <div class="foot-title">可以使用以下方式登录</div>
+                    <div>
+                        <ul class="acc-list">
+                            <li class="acc-qq"><a href="#">1</a></li>
+                            <li class="acc-sina"><a href="#">2</a></li>
+                            <li class="acc-weixin"><a href="#">3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
